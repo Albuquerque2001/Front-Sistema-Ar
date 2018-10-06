@@ -1,0 +1,332 @@
+<?php
+session_start();
+include 'connection.php';
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+	<title>Perfil</title>
+</head>
+<body>
+	
+	<div class="op">
+		<div class="img">
+			<img src="Assets/GetSchoolLogo.png" alt="logo" width="90%">
+		</div>
+		
+		<div class="lateral">
+			
+			<!-- <div class="cadastro">
+				<a href="editar.php">Editar informações de perfil</a>
+			</div>	 -->	
+		</div>
+
+		<form class="form-inline my-2 my-lg-0">
+			<input class="form-control mr-sm-2" type="search" placeholder="Busque sua sala aqui" aria-label="Search">
+			<button type="button" class="btn btn-success">Procurar</button>
+		</form>
+
+	</div>
+	
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Sala 1</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+      	<td><label>Manhã</label></td>
+        <td>Ligar: <input type="text" placeholder="00:00" required> <br>
+			Desligar:	<input type="text" placeholder="00:00" required></td>
+        <td>Temperatura
+         <input type="submit" value="17ºC"> <input type="submit" value="18ºC">
+        	<input type="submit" value="19ºC"> <input type="submit" value="20ºC"> <input type="submit" value="21ºC">
+    		<input type="submit" value="22ºC"> <input type="submit" value="23ºC"> <input type="submit" value="24ºC"> 
+    		<input type="submit" value="25ºC"> <input type="submit" value="26ºC"> <input type="submit" value="27ºC"> 
+    		<input type="submit" value="28ºC"> <input type="submit" value="29ºC"> <input type="submit" value="30ºC"></td>
+        
+      </tr>
+      <tr>
+      	<td><label>Tarde</label></td>
+        <td>Ligar: <input type="text" placeholder="00:00" required> <br>
+			Desligar:	<input type="text" placeholder="00:00" required></td>
+        <td>Temperatura
+         <input type="submit" value="17ºC"> <input type="submit" value="18ºC">
+        	<input type="submit" value="19ºC"> <input type="submit" value="20ºC"> <input type="submit" value="21ºC">
+    		<input type="submit" value="22ºC"> <input type="submit" value="23ºC"> <input type="submit" value="24ºC"> 
+    		<input type="submit" value="25ºC"> <input type="submit" value="26ºC"> <input type="submit" value="27ºC"> 
+    		<input type="submit" value="28ºC"> <input type="submit" value="29ºC"> <input type="submit" value="30ºC"></td>
+        
+      </tr>
+      <tr>
+      	<td><label>Noite</label></td>
+        <td>Ligar: <input type="text" placeholder="00:00" required> <br>
+			Desligar:	<input type="text" placeholder="00:00" required></td>
+        <td>Temperatura
+         <input type="submit" value="17ºC"> <input type="submit" value="18ºC">
+        	<input type="submit" value="19ºC"> <input type="submit" value="20ºC"> <input type="submit" value="21ºC">
+    		<input type="submit" value="22ºC"> <input type="submit" value="23ºC"> <input type="submit" value="24ºC"> 
+    		<input type="submit" value="25ºC"> <input type="submit" value="26ºC"> <input type="submit" value="27ºC"> 
+    		<input type="submit" value="28ºC"> <input type="submit" value="29ºC"> <input type="submit" value="30ºC"></td>
+        
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Sala 2</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+      	<td><label>Manhã</label></td>
+        <td>Ligar: <input type="text" placeholder="00:00" required> <br>
+			Desligar:	<input type="text" placeholder="00:00" required></td>
+        <td>Temperatura
+         <input type="submit" value="17ºC"> <input type="submit" value="18ºC">
+        	<input type="submit" value="19ºC"> <input type="submit" value="20ºC"> <input type="submit" value="21ºC">
+    		<input type="submit" value="22ºC"> <input type="submit" value="23ºC"> <input type="submit" value="24ºC"> 
+    		<input type="submit" value="25ºC"> <input type="submit" value="26ºC"> <input type="submit" value="27ºC"> 
+    		<input type="submit" value="28ºC"> <input type="submit" value="29ºC"> <input type="submit" value="30ºC"></td>
+        
+      </tr>
+      <tr>
+      	<td><label>Tarde</label></td>
+        <td>Ligar: <input type="text" placeholder="00:00" required> <br>
+			Desligar:	<input type="text" placeholder="00:00" required></td>
+        <td>Temperatura
+         <input type="submit" value="17ºC"> <input type="submit" value="18ºC">
+        	<input type="submit" value="19ºC"> <input type="submit" value="20ºC"> <input type="submit" value="21ºC">
+    		<input type="submit" value="22ºC"> <input type="submit" value="23ºC"> <input type="submit" value="24ºC"> 
+    		<input type="submit" value="25ºC"> <input type="submit" value="26ºC"> <input type="submit" value="27ºC"> 
+    		<input type="submit" value="28ºC"> <input type="submit" value="29ºC"> <input type="submit" value="30ºC"></td>
+        
+      </tr>
+      <tr>
+      	<td><label>Noite</label></td>
+        <td>Ligar: <input type="text" placeholder="00:00" required> <br>
+			Desligar:	<input type="text" placeholder="00:00" required></td>
+        <td>Temperatura
+         <input type="submit" value="17ºC"> <input type="submit" value="18ºC">
+        	<input type="submit" value="19ºC"> <input type="submit" value="20ºC"> <input type="submit" value="21ºC">
+    		<input type="submit" value="22ºC"> <input type="submit" value="23ºC"> <input type="submit" value="24ºC"> 
+    		<input type="submit" value="25ºC"> <input type="submit" value="26ºC"> <input type="submit" value="27ºC"> 
+    		<input type="submit" value="28ºC"> <input type="submit" value="29ºC"> <input type="submit" value="30ºC"></td>
+        
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Sala 3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+      	<td><label>Manhã</label></td>
+        <td>Ligar: <input type="text" placeholder="00:00" required> <br>
+			Desligar:	<input type="text" placeholder="00:00" required></td>
+        <td>Temperatura
+         <input type="submit" value="17ºC"> <input type="submit" value="18ºC">
+        	<input type="submit" value="19ºC"> <input type="submit" value="20ºC"> <input type="submit" value="21ºC">
+    		<input type="submit" value="22ºC"> <input type="submit" value="23ºC"> <input type="submit" value="24ºC"> 
+    		<input type="submit" value="25ºC"> <input type="submit" value="26ºC"> <input type="submit" value="27ºC"> 
+    		<input type="submit" value="28ºC"> <input type="submit" value="29ºC"> <input type="submit" value="30ºC"></td>
+        
+      </tr>
+      <tr>
+      	<td><label>Tarde</label></td>
+        <td>Ligar: <input type="text" placeholder="00:00" required> <br>
+			Desligar:	<input type="text" placeholder="00:00" required></td>
+        <td>Temperatura
+         <input type="submit" value="17ºC"> <input type="submit" value="18ºC">
+        	<input type="submit" value="19ºC"> <input type="submit" value="20ºC"> <input type="submit" value="21ºC">
+    		<input type="submit" value="22ºC"> <input type="submit" value="23ºC"> <input type="submit" value="24ºC"> 
+    		<input type="submit" value="25ºC"> <input type="submit" value="26ºC"> <input type="submit" value="27ºC"> 
+    		<input type="submit" value="28ºC"> <input type="submit" value="29ºC"> <input type="submit" value="30ºC"></td>
+        
+      </tr>
+      <tr>
+      	<td><label>Noite</label></td>
+        <td>Ligar: <input type="text" placeholder="00:00" required> <br>
+			Desligar:	<input type="text" placeholder="00:00" required></td>
+        <td>Temperatura
+         <input type="submit" value="17ºC"> <input type="submit" value="18ºC">
+        	<input type="submit" value="19ºC"> <input type="submit" value="20ºC"> <input type="submit" value="21ºC">
+    		<input type="submit" value="22ºC"> <input type="submit" value="23ºC"> <input type="submit" value="24ºC"> 
+    		<input type="submit" value="25ºC"> <input type="submit" value="26ºC"> <input type="submit" value="27ºC"> 
+    		<input type="submit" value="28ºC"> <input type="submit" value="29ºC"> <input type="submit" value="30ºC"></td>
+        
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Sala 4</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+      	<td><label>Manhã</label></td>
+        <td>Ligar: <input type="text" placeholder="00:00" required> <br>
+			Desligar:	<input type="text" placeholder="00:00" required></td>
+        <td>Temperatura
+         <input type="submit" value="17ºC"> <input type="submit" value="18ºC">
+        	<input type="submit" value="19ºC"> <input type="submit" value="20ºC"> <input type="submit" value="21ºC">
+    		<input type="submit" value="22ºC"> <input type="submit" value="23ºC"> <input type="submit" value="24ºC"> 
+    		<input type="submit" value="25ºC"> <input type="submit" value="26ºC"> <input type="submit" value="27ºC"> 
+    		<input type="submit" value="28ºC"> <input type="submit" value="29ºC"> <input type="submit" value="30ºC"></td>
+        
+      </tr>
+      <tr>
+      	<td><label>Tarde</label></td>
+        <td>Ligar: <input type="text" placeholder="00:00" required> <br>
+			Desligar:	<input type="text" placeholder="00:00" required></td>
+        <td>Temperatura
+         <input type="submit" value="17ºC"> <input type="submit" value="18ºC">
+        	<input type="submit" value="19ºC"> <input type="submit" value="20ºC"> <input type="submit" value="21ºC">
+    		<input type="submit" value="22ºC"> <input type="submit" value="23ºC"> <input type="submit" value="24ºC"> 
+    		<input type="submit" value="25ºC"> <input type="submit" value="26ºC"> <input type="submit" value="27ºC"> 
+    		<input type="submit" value="28ºC"> <input type="submit" value="29ºC"> <input type="submit" value="30ºC"></td>
+        
+      </tr>
+      <tr>
+      	<td><label>Noite</label></td>
+        <td>Ligar: <input type="text" placeholder="00:00" required> <br>
+			Desligar:	<input type="text" placeholder="00:00" required></td>
+        <td>Temperatura
+         <input type="submit" value="17ºC"> <input type="submit" value="18ºC">
+        	<input type="submit" value="19ºC"> <input type="submit" value="20ºC"> <input type="submit" value="21ºC">
+    		<input type="submit" value="22ºC"> <input type="submit" value="23ºC"> <input type="submit" value="24ºC"> 
+    		<input type="submit" value="25ºC"> <input type="submit" value="26ºC"> <input type="submit" value="27ºC"> 
+    		<input type="submit" value="28ºC"> <input type="submit" value="29ºC"> <input type="submit" value="30ºC"></td>
+        
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Sala 5</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+      	<td><label>Manhã</label></td>
+        <td>Ligar: <input type="text" placeholder="00:00" required> <br>
+			Desligar:	<input type="text" placeholder="00:00" required></td>
+        <td>Temperatura
+         <input type="submit" value="17ºC"> <input type="submit" value="18ºC">
+        	<input type="submit" value="19ºC"> <input type="submit" value="20ºC"> <input type="submit" value="21ºC">
+    		<input type="submit" value="22ºC"> <input type="submit" value="23ºC"> <input type="submit" value="24ºC"> 
+    		<input type="submit" value="25ºC"> <input type="submit" value="26ºC"> <input type="submit" value="27ºC"> 
+    		<input type="submit" value="28ºC"> <input type="submit" value="29ºC"> <input type="submit" value="30ºC"></td>
+        
+      </tr>
+      <tr>
+      	<td><label>Tarde</label></td>
+        <td>Ligar: <input type="text" placeholder="00:00" required> <br>
+			Desligar:	<input type="text" placeholder="00:00" required></td>
+        <td>Temperatura
+         <input type="submit" value="17ºC"> <input type="submit" value="18ºC">
+        	<input type="submit" value="19ºC"> <input type="submit" value="20ºC"> <input type="submit" value="21ºC">
+    		<input type="submit" value="22ºC"> <input type="submit" value="23ºC"> <input type="submit" value="24ºC"> 
+    		<input type="submit" value="25ºC"> <input type="submit" value="26ºC"> <input type="submit" value="27ºC"> 
+    		<input type="submit" value="28ºC"> <input type="submit" value="29ºC"> <input type="submit" value="30ºC"></td>
+        
+      </tr>
+      <tr>
+      	<td><label>Noite</label></td>
+        <td>Ligar: <input type="text" placeholder="00:00" required> <br>
+			Desligar:	<input type="text" placeholder="00:00" required></td>
+        <td>Temperatura
+         <input type="submit" value="17ºC"> <input type="submit" value="18ºC">
+        	<input type="submit" value="19ºC"> <input type="submit" value="20ºC"> <input type="submit" value="21ºC">
+    		<input type="submit" value="22ºC"> <input type="submit" value="23ºC"> <input type="submit" value="24ºC"> 
+    		<input type="submit" value="25ºC"> <input type="submit" value="26ºC"> <input type="submit" value="27ºC"> 
+    		<input type="submit" value="28ºC"> <input type="submit" value="29ºC"> <input type="submit" value="30ºC"></td>
+        
+      </tr>
+    </tbody>
+  </table>
+
+	<div class="Footpage">
+		CBV Boa Viagem - Rua Professor Eduardo Wanderley Filho, 539
+		<br>
+		Telefone: (81) 3465.4444 / Email: atendimento@cbvweb.com.br
+	</div>
+
+</body>
+</html>
+
+<style type="text/css">
+body{
+	background: linear-gradient(lightgreen, green);
+}
+a:link, a:visited {
+	background-color: ;
+	border: solid green;
+	color: black;
+	font-size: 21px;
+	padding: 14px 25px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+}
+a:hover, a:active {
+	background-color: green;
+}
+.title{
+	background: gray;
+}
+.table{
+	background: white;
+	margin: 2%;
+	width: 96%;
+}
+.img{
+	margin: 3%;
+	float: left;
+	width: 50%;
+}
+.login{
+	margin-left: 6%;
+}
+.index{
+	margin-left: 6%;
+}
+.opções{
+	width: 50%;
+	float: left;
+	text-align: center;
+}
+.lateral{
+	padding-top: 4%;
+	padding-right: 3%;
+	margin-bottom: 3%;
+}
+.Footpage{
+	margin-top: 5%;
+	font-size: 17px;
+	color: black;
+	width: 100%;
+	height: 100%;	
+	background-color: lightgray;
+	text-align: center;
+}
+</style>
